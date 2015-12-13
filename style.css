@@ -1,0 +1,434 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+
+/* ----------------- ClearFix -------------------*/
+
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ' ';
+  /* Older browser do not support empty content */
+}
+
+
+/* ----------------- User css -------------------*/
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Myriad Pro Regular'), url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+body {
+  font-family: 'Open Sans', 'Open Sans';
+  font-size: 14px;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Myriad Pro Regular', 'Open Sans';
+  text-transform: uppercase;
+  color: #314a5b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: #9aa0ab;
+}
+
+.hero-text span,
+.features-item span,
+.portfolio-column-right span,
+.team-section span {
+  color: #fa5c65;
+}
+
+.hero-section {
+  background: #fff url('img/hero-bg.jpg') no-repeat top center;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-header {
+  line-height: 5em;
+  height: 5em;
+}
+
+.logo {
+  line-height: inherit;
+  float: left;
+  width: 140px;
+  height: inherit;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  background-color: #fa5c65;
+}
+
+.logo a {
+  font-size: 1.42857em;
+}
+
+.logo span {
+  color: #314a5b;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav ul {
+  line-height: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  font-size: 1em;
+  display: inline-block;
+  margin: 0 1.35em;
+  text-transform: uppercase;
+  color: #314a5b;
+}
+
+.main-nav .icon {
+  margin: 0 .78em;
+  color: #fa5c65;
+}
+
+.main-nav .icon:last-child {
+  margin-right: 0;
+}
+
+.hero-text {
+  width: 450px;
+  padding: 22em 0 27em;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 3.43em;
+  line-height: 1.1em;
+}
+
+.hero-text p {
+  font-size: 1.42em;
+  line-height: 2em;
+  color: #314a5b;
+}
+
+.btn {
+  font-size: 1.07em;
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1.86em 3em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #fa5c65;
+}
+
+.features-row {
+  margin-top: 4em;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 1.42em;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-item h4 {
+  font-size: 1.857em;
+  line-height: 1em;
+}
+
+.features-item p {
+  font-size: 1.1em;
+  line-height: 1.43em;
+  margin-bottom: 2.286em;
+  padding-top: 1.41em;
+}
+
+.btn-alt {
+  font-size: 1em;
+  line-height: 1.42em;
+  text-transform: uppercase;
+  color: #fa5c65;
+}
+
+.btn-alt:hover, .btn-alt:active {
+  color: #9aa0ab;
+}
+
+.portfolio-column-left,
+.portfolio-column-right {
+  width: 460px;
+}
+
+.portfolio-column-left {
+  float: left;
+  padding-right: .7em;
+}
+
+.portfolio-column-left img {
+  width: 100%;
+}
+
+.portfolio-column-right {
+  float: right;
+  padding-top: 5em;
+}
+
+.portfolio-column-right h3 {
+  font-size: 2.857em;
+  line-height: 1.15em;
+}
+
+.portfolio-column-right .addition-text {
+  font-size: 1.14em;
+  line-height: 1.25em;
+  color: #314a5b;
+  ;
+}
+
+.portfolio-column-right .description {
+  font-size: 1.1em;
+  line-height: 1.428em;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+}
+
+.team-section h3 {
+  font-size: 2.285em;
+  line-height: 1.69em;
+}
+
+.team-section h3 + p {
+  font-size: 1.1em;
+  line-height: 1em;
+  margin-top: .25em;
+}
+
+.team-row {
+  margin-top: 3.2em;
+}
+
+.team-member {
+  float: left;
+  width: 300px;
+  padding-right: 1.4em;
+}
+
+.team-member:last-child {
+  padding-right: 0;
+}
+
+.team-member img {
+  float: left;
+  width: 9.15em;
+  border-radius: 50%;
+}
+
+.team-member h4 {
+  font-size: 1.57em;
+  line-height: 2em;
+}
+
+.team-member-position,
+.team-member-description {
+  font-size: 1em;
+  line-height: 1.43em;
+  color: #fa5c65;
+}
+
+.team-member-description {
+  margin-top: 1em;
+  color: #9aa0ab;
+}
+
+.team-section .btn-alt {
+  float: right;
+  margin-top: 3.5em;
+}
+
+footer {
+  margin-top: 4em;
+  border-top: 1px #e6eaed solid;
+  padding: 2em 0;
+}
+.footer-column-left{
+  float: left;
+}
+
+.footer-column-right {
+  float: right;
+}
+.social li{
+  display: inline-block;
+  padding-right: 0.8em;
+  color: #9aa0ab;
+  font-size: 1.25em;
+  transition: all ease-in-out 0.25s;
+}
+
+.social li:hover, .social a:active, .main-nav li:hover, .main-nav a:active {
+  color: #fa5c65;
+}
